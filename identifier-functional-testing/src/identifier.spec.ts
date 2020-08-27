@@ -28,4 +28,8 @@ describe('Identifier validator', () => {
     const ret = isValid('a12345678')
     expect(ret).toEqual(false)
   })
+  test('should return false if string is null', () => {
+    const ret = isValid(null)
+    expect(ret).toEqual(false)
+  })
 })
