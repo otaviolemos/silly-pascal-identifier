@@ -1,4 +1,7 @@
 export function isValid (identifier: string): boolean {
+  if (identifier === null) {
+    return false
+  }
   if (identifier.length < 1 || identifier.length > 6) {
     return false
   }
