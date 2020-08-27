@@ -1,3 +1,3 @@
-# typescript-base
+# Silly Pascal identifier validator
 
-Base typescript project with all necessary dependencies.
+Simple exercise using equivalence class partitioning.
