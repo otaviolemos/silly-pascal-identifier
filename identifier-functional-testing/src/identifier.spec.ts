@@ -20,4 +20,8 @@ describe('Identifier validator', () => {
     const ret = isValid('a12^34')
     expect(ret).toEqual(false)
   })
+  test('should return false if string is empty', () => {
+    const ret = isValid('')
+    expect(ret).toEqual(false)
+  })
 })
