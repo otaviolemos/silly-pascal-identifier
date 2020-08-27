@@ -32,4 +32,12 @@ describe('Identifier validator', () => {
     const ret = isValid(null)
     expect(ret).toEqual(false)
   })
+  test('should return true with valid identifier with length 1', () => {
+    const ret = isValid('i')
+    expect(ret).toEqual(true)
+  })
+  test('should return true with valid identifier with length 6', () => {
+    const ret = isValid('a12345')
+    expect(ret).toEqual(true)
+  })
 })
