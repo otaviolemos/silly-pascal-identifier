@@ -24,4 +24,8 @@ describe('Identifier validator', () => {
     const ret = isValid('')
     expect(ret).toEqual(false)
   })
+  test('should return false if string exceeds valid length', () => {
+    const ret = isValid('a12345678')
+    expect(ret).toEqual(false)
+  })
 })
