@@ -36,6 +36,7 @@ describe('Identifier validator', () => {
 
   test('should return false if string is null', () => {
     const ret = isValid(null)
+    console.log(ret)
     expect(ret).toEqual(false)
   })
 
