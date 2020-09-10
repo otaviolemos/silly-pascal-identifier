@@ -12,7 +12,7 @@
   "coverageAnalysis": "off",
   "tsconfigFile": "tsconfig.json",
   "mutate": [
-    "src/**/*.ts"
-  ],
-  "files-to-exclude" : "./src/identifier.spec.ts"
+    "src/**/*.ts",
+    "!src/**/*.spec.ts"
+  ]
 }

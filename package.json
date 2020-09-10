@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest --coverage"
+    "test": "jest",
+    "test-mutate": "stryker run"
   },
   "type": "module",
   "author": "",
@@ -15,6 +16,7 @@
     "@stryker-mutator/typescript": "^3.3.1",
     "@types/node": "^14.0.27",
     "@typescript-eslint/eslint-plugin": "^3.8.0",
+    "^.+\\.tsx?$": "<rootDir>/node_modules/ts-jest/preprocessor.js",
     "eslint": "^7.6.0",
     "eslint-config-standard-with-typescript": "^18.0.2",
     "eslint-plugin-import": "^2.22.0",
@@ -25,7 +27,7 @@
     "husky": "^4.2.5",
     "jest": "^26.4.0",
     "lint-staged": "^10.2.11",
-    "typescript": "^3.9.7",
-    "^.+\\.tsx?$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    "ts-jest": "^26.3.0",
+    "typescript": "^3.9.7"
   }
 }
